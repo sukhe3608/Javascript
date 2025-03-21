@@ -227,8 +227,9 @@ In **Heap** , we get the reference of that variable.
 Const name = “new”
 Const repoCount = 50
 console.log(name + repoCount); // this is not preferable so the string interpolation is used now a days.
-
+```
 console.log(`Hello my name is ${name.toUppercase} and my repo count is {repoCount}`);
+```
 
 **<ins>Another way to declare String</ins>**
 
