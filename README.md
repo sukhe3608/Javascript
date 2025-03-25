@@ -494,6 +494,7 @@ console.lof(Array.of(score1, score2, score 3); //  convert this into an array
 
 **object literals**
 
+```
 Const JsUser = {
 	Name : “sukhe”,
 	Age: 20,
@@ -502,6 +503,7 @@ Const JsUser = {
 	isLoggedIn : false ,
 	lastLoginDays : [“Monday” , “Saturday”]
 }
+```
 
 <ins>two ways to access the  objects</ins>
 
@@ -604,22 +606,23 @@ Or
 Const obj3 = Object.assign({} , obj1 , obj2); 
 
 Const obj3 = { ...obj1, ...obj2 }
-
+```
 Const user = [
 	{
-	Id : 1 ,
-	Email : “s@gmail.com”
-},
+		Id : 1 ,
+		Email : “s@gmail.com”
+	},
 	{
-	Id : 2 ,
-	Email : “u@gmail.com”
-},
+		Id : 2 ,
+		Email : “u@gmail.com”
+	},
 	{
-	Id : 3 ,
-	Email : “k@gmail.com”
-},
+		Id : 3 ,
+		Email : “k@gmail.com”
+	},
 
 ]
+```
 
 
 **<ins>Method</ins>**
