@@ -450,6 +450,259 @@ myArr.slice[1,3]
 
 myArr.splice[1,3]
 
+Const marvel = [“thor” , “Ironman” ,”spiderman]
+
+Const Dc = [“Superman” , “flash” , “batman”]
+
+marvel.push(Dc)
+
+**this will create a issue in which it can create array inside the error because in javascript in array we can pass the different types of data type.**
+
+**<ins>Spread operator</ins>( … )**
+
+
+Const all = [...marvel ,... Dc ]
+
+condole.log(all);
+
+
+Const another_array =[ 1, 2, 3,[ 4, 5, 6,] ,7 , [6 , 7, [4, 5]]
+
+Const real_another_array = another_array.flat(Infinity)
+
+console.log(real_another_array);
+
+
+console.log(Array.isArray(“new”)); // check it is array or not
+
+console.log(Array.from(“new”)); // convert this into array
+
+console.log(Array.from({name: “new”}); //return empty array , and if we want an array we need to define it that we array with keys
+
+Let score1 = 100
+
+Let score = 200
+
+Let score3 = 300
+
+console.lof(Array.of(score1, score2, score 3); //  convert this into an array
+
+
+## Object
+
+**singleton object** 
+
+**object literals**
+
+Const JsUser = {
+	Name : “sukhe”,
+	Age: 20,
+	Location : “Delhi”,
+	Email : “sukhe@mail.com”,
+	isLoggedIn : false ,
+	lastLoginDays : [“Monday” , “Saturday”]
+}
+
+<ins>two ways to access the  objects</ins>
+
+console.log(JsUser.email);
+
+console.log(JsUser[“email”]);
+
+Note :-  why we prefer the second method instead of the first one  because , Suppose an example in the JsUser “fullname”
+```
+		Const JsUser = {
+			Name : “sukhe”,
+			“Full name” : “sukhwinder singh”
+			Age: 20,
+			Location : “Delhi”,
+			Email : “sukhe@mail.com”,
+			isLoggedIn : false ,
+			lastLoginDays : [“Monday” , “Saturday”]
+		}
+```
+
+We cannot directly use it using the dot operator , so we need to use it by using the square bracket method.
+
+// to add symbol in the object as a object 
+
+Like
+```
+Const mySymbol = Symbol(“key1”)
+Const JsUser = {
+		Name : “sukhe”,
+		“Full name” : “sukhwinder singh”,
+		mySymbol : “key1”,  // wrong because if we use it , it will give type string
+		[mySymbol] : “key1”, //correct way to pass symbol , using the square bracket 
+		Age: 20,
+		Location : “Delhi”,
+		Email : “sukhe@mail.com”,
+		isLoggedIn : false ,
+		lastLoginDays : [“Monday” , “Saturday”]
+}
+```
+
+
+JsUser.email = “new@mail.com” ;
+
+Object.freeze(JsUser) ; // help not to propagate any changes.
+
+jsUser.email = “new1111@mail.com” // this change is not propagated
+
+
+**<ins>adding function in objects</ins>**
+
+JsUser.greeting = function() {
+	console.log(“Hello”);
+}
+
+console.log(JsUser.greeting); // function(anonymous)
+
+console.log(JsUser.greeting()); //hello
+
+
+
+
+Const newUser = new Object() // singleton object 
+
+Const newUser1 = {} //non singleton object
+
+
+newUser1.id = “123fr” 
+
+newUser1.name = “Sammy”
+
+newUser1.isLoggedIn = false  
+
+
+
+
+**<ins>objects in object</ins>**
+```
+Const regularUser = {
+	Email : new@gmail.com,
+		Fullname : {
+			Userfullname:{
+ 				firstname: “Sukhwinder”,
+				Lastname: “Singh”
+			}
+		}
+}
+
+```
+
+console.log(regularUser.fullname.Userfullname.firstname)
+
+Const obj1 = {1 : “a” , 2 : “b”}
+
+Const ob2 = {3 : “a” , 4 : “b”}
+
+Const obj3 = Object.assign(obj1 , obj2);
+
+Or 
+
+Const obj3 = Object.assign({} , obj1 , obj2); 
+
+Const obj3 = { ...obj1, ...obj2 }
+
+Const user = [
+	{
+	Id : 1 ,
+	Email : “s@gmail.com”
+},
+	{
+	Id : 2 ,
+	Email : “u@gmail.com”
+},
+	{
+	Id : 3 ,
+	Email : “k@gmail.com”
+},
+
+]
+
+
+**<ins>Method</ins>**
+
+console.log(Object.keys(newUser));
+
+console.log(Object.Values(newUser));
+
+console.log(Object.entries(newUser));
+
+console.log(newUser.hasOwnProperty(‘isLoggedIn’));
+
+
+**<ins>Destructuring of Objects</ins>**
+```
+ Const course = {
+	Coursename : “JS “,
+	price : “999” ,
+	courseInstructor: “Hitesh”
+}
+```
+
+Const {courseInstructor} = course
+
+console.log(courseInstructor);
+ 
+
+/// we can also shorten the name in destructuring 
+
+Const {courseInstructor : instructor} = course
+
+console.log(instructor);
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
 
 
 
